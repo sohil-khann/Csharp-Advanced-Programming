@@ -14,11 +14,11 @@ public class ValidateSSN
 
         if (Regex.IsMatch(ssn, pattern))
         {
-            Console.WriteLine($"✅ \"{ssn}\" is valid");
+            Console.WriteLine($" \"{ssn}\" is valid");
         }
         else
         {
-            Console.WriteLine($"❌ \"{ssn}\" is invalid");
+            Console.WriteLine($" \"{ssn}\" is invalid");
         }
     }
 }
