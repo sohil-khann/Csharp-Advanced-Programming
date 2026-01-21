@@ -11,7 +11,7 @@ public class ExtractLanguages
     {
         // Construct pattern based on provided language list
         string pattern = @"\b(" + string.Join("|", languages) + @")\b";
-        MatchCollection matches = Regex.Matches(text, pattern,);
+        MatchCollection matches = Regex.Matches(text, pattern);
 
         var results = new System.Collections.Generic.List<string>();
         foreach (Match match in matches)
